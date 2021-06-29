@@ -87,7 +87,7 @@ header {
     transition: transform 0.3s ease-in-out;
 }
 
-.move:hover .movie-over {
+.movie:hover .movie-over {
     transform: translateY(0%);
 }
 

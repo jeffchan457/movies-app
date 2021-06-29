@@ -17,15 +17,15 @@ function App() {
         fetch(API)
         .then(res => res.json())
         .then(data => {
-            setMovies(data);
+            setMovies(data.results);
         });
-    }
+    };
 
     const handleOnSubmit = (e) => {
         e.preventDefault();
         if(searchTerm) {
-            getMovies(SEARCH_API+searchTerm);
-            setSearchTerm('');
+            getMovies(SEARCH_API + searchTerm);
+            setSearchTerm("");
         }
     };
 
